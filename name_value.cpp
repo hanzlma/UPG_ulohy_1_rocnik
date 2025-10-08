@@ -11,7 +11,7 @@ int main(){
     cout << "Zadej jmeno: ";
     cin >> name;
     
-    for(char &c: name){ //reference
+    for(char c: name){
         c = toupper((unsigned char) c); // Pro konzistenci prevedeme všechna písmena na velká
         value += int(c);
     }
